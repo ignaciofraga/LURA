@@ -14,7 +14,7 @@ archivo_recortable   = 'DATOS/PLANO_LURA_A3.pdf'
 
 #st.title("**Monta el barco del Centro Oceanográfico en tu propia casa!**")
 
-original_title = '<p style="font-family:Courier; color:Blue; font-size: 20px;">Monta tu propia casa!</p>'
+original_title = '<p style="font-family:Gothic Light; color:Blue; font-size: 20px;">Monta tu propia casa!</p>'
 st.markdown(original_title, unsafe_allow_html=True)
 
 st.markdown('<div style="text-align: center;font-size: 15;">Monta el barco del Centro Oceanográfico en tu propia casa!</div>', unsafe_allow_html=True)
