@@ -1,2 +1,0 @@
-usuario_interno = IEO_2022
-usuario_externo = 2022_IEO
