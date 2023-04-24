@@ -14,16 +14,14 @@ archivo_recortable   = 'DATOS/PLANO_LURA_A3.pdf'
 
 #st.title("**Monta el barco del Centro Oceanográfico en tu propia casa!**")
 
-original_title = '<p style="text-align: center;font-family:Gothic Light; color:Blue; font-size: 20px;">Monta tu propia casa!</p>'
-st.markdown(original_title, unsafe_allow_html=True)
+titulo_principal = '<p style="text-align: center;font-family:Gothic Bold; font-size: 35px;">Monta tu barco del Oceanográfico</p>'
+st.markdown(titulo_principal, unsafe_allow_html=True)
+titulo_principal = '<p style="text-align: center;font-family:Gothic Light; font-size: 35px;"> de A Coruña en tu propia casa !!</p>'
+st.markdown(titulo_principal, unsafe_allow_html=True)
 
-st.markdown('<div style="text-align: center;font-size: 15;">Monta el barco del Centro Oceanográfico en tu propia casa!</div>', unsafe_allow_html=True)
 
-#original_title = '<p style="font-family:Gothic Light; color:Blue; font-size: 20px;">Monta tu propia casa!</p>'
-
-st.text('Descarga el recortable pulsando en el botón inferior. Imprime los planos en un A3, monta el barco y comienza a navegar!!')
-        
-#{font-size: 3rem !important;}
+titulo_secundario = '<p style="text-align: center;font-family:Gothic Light; font-size: 20px;"> Imprime los planos en un A3, monta el barco y comienza a navegar</p>'
+st.markdown(titulo_secundario, unsafe_allow_html=True)
     
 with open(archivo_recortable, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
@@ -33,7 +31,8 @@ st.download_button(label="DESCARGAR RECORTABLE",
                     file_name="RECORTABLE_LURA_IEO.pdf",
                     mime='application/octet-stream')
 
-st.text('Aquí tienes unas fotos del barco terminado, para que te ayuden en el montaje')
+titulo_fotos = '<p style="text-align: center;font-family:Gothic; font-size: 20px;"> Aquí tienes unas fotos del barco terminado, para que te ayuden en el montaje</p>'
+st.markdown(titulo_fotos, unsafe_allow_html=True)
 
 
 # Despliega la extensión para subir los archivos .btl y .cnv
