@@ -12,7 +12,9 @@ logo_IEO_principal   = 'DATOS/IMAGENES/ieo.jpg'
 archivo_recortable   = 'DATOS/PLANO_LURA_A3.pdf'
 
 
-st.title("**Monta el barco del Centro Oceanográfico en tu propia casa!**")
+#st.title("**Monta el barco del Centro Oceanográfico en tu propia casa!**")
+
+st.markdown('<div style="text-align: center;">Monta el barco del Centro Oceanográfico en tu propia casa!</div>', unsafe_allow_html=True)
 
 st.text('Descarga el recortable pulsando en el botón inferior. Imprime los planos en un A3, monta el barco y comienza a navegar!!')
         
