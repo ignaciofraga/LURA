@@ -8,23 +8,26 @@ Created on Mon Apr 24 11:13:13 2023
 import streamlit as st
 from PIL import Image
 
-logo_IEO_principal   = 'DATOS/IMAGENES/logo-CSIC.jpg' 
+logo_IEO_principal   = 'DATOS/IMAGENES/LOGOS.jpg' 
 logo_centro_coruna   = 'DATOS/IMAGENES/logo_IEO_Coru.jpg' 
 
 foto_1               = 'DATOS/IMAGENES/ieo.jpg'    
 archivo_recortable   = 'DATOS/PLANO_LURA_A3.pdf'
 
 
-# LOGOS INICIO
-col1, col2 = st.columns(2,gap="small")
+# # LOGOS INICIO
+imagen_pagina = Image.open(logo_IEO_principal) 
+st.image(imagen_pagina) 
 
-with col1:
-    imagen_pagina = Image.open(logo_centro_coruna) 
-    st.image(imagen_pagina)     
+# col1, col2 = st.columns(2,gap="small")
+
+# with col1:
+#     imagen_pagina = Image.open(logo_centro_coruna) 
+#     st.image(imagen_pagina)     
     
-with col2:
-    imagen_pagina = Image.open(logo_IEO_principal) 
-    st.image(imagen_pagina)   
+# with col2:
+#     imagen_pagina = Image.open(logo_IEO_principal) 
+#     st.image(imagen_pagina)   
 
 
 # TITULO PRINCIPAL
