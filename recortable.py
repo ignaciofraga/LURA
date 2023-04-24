@@ -31,9 +31,9 @@ st.image(imagen_pagina)
 
 
 # TITULO PRINCIPAL
-titulo_principal = '<p style="text-align: center;font-family:Gothic Bold; font-size: 35px;">Monta el barco del Oceanográfico</p>'
+titulo_principal = '<p style="text-align: center;font-family:Bahnschrift; font-size: 35px;">Monta el barco del Oceanográfico</p>'
 st.markdown(titulo_principal, unsafe_allow_html=True)
-titulo_principal = '<p style="text-align: center;font-family:Gothic Light; font-size: 35px;"> de A Coruña en tu propia casa !!</p>'
+titulo_principal = '<p style="text-align: center;font-family:Bahnschrift; font-size: 35px;"> de A Coruña en tu propia casa !!</p>'
 st.markdown(titulo_principal, unsafe_allow_html=True)
 
 # DESCARGA RECORTABLE
@@ -57,7 +57,7 @@ with col3:
 
 
 # FOTOS GUIA
-titulo_fotos = '<p style="text-align: center;font-family:Gothic; font-size: 20px;"> Aquí tienes unas fotos del barco terminado, para que te ayuden en el montaje</p>'
+titulo_fotos = '<p style="text-align: center;font-family:Bahnschrift; font-size: 20px;"> Aquí tienes unas fotos del barco terminado, para que te ayuden en el montaje</p>'
 st.markdown(titulo_fotos, unsafe_allow_html=True)
 
 
