@@ -41,18 +41,18 @@ if tipo_entrada == acciones[0]:
 
     # Texto
     texto = 'El Lura es el barco que utilizan los investigadores del Centro Oceanográfico de A Coruña para estudiar la costa cercana a la ciudad. Se trata de un antiguo buque de pesca, de 14 metros de eslora (longitud) y 4 de manga (anchura) acondicionado para trabajos científicos'
-    titulo_principal = '<p style="text-align: center;font-family:Bahnschrift; font-size: 35px;">' + texto + '</p>'
+    titulo_principal = '<p style="text-align:  justify;font-family:Bahnschrift; font-size: 20px;">' + texto + '</p>'
     st.markdown(titulo_principal, unsafe_allow_html=True)
     
     imagen_pagina = Image.open(foto_Lura_1) 
     st.image(imagen_pagina) 
     
     texto = 'Cuando el tiempo lo permite, los investigadores y marineros del IEO muestrean la columna de agua en una serie de puntos concretos. Se miden diferentes variables físicas (temperatura, salinidad,...), químicas (oxígeno disuelto, pH,...) y biológicas (biomasa de plancton, concentración de clorofila). El IEO lleva casi 40 años haciendo estos estudios, lo que le ha permitido recopilar mucha información, fundamental para estudiar el cambio climático o conocer la salud de nuestra costa.' 
-    titulo_principal = '<p style="text-align: center;font-family:Bahnschrift; font-size: 35px;">' + texto + '</p>'
+    titulo_principal = '<p style="text-align:  justify;font-family:Bahnschrift; font-size: 20px;">' + texto + '</p>'
     st.markdown(titulo_principal, unsafe_allow_html=True)
 
     texto = 'El IEO también estudia los bancos de peces de la zona, una información muy útil en una región como Galicia, donde la pesca es una actividad muy importante'
-    titulo_principal = '<p style="text-align: center;font-family:Bahnschrift; font-size: 35px;">' + texto + '</p>'
+    titulo_principal = '<p style="text-align:  justify;font-family:Bahnschrift; font-size: 20px;">' + texto + '</p>'
     st.markdown(titulo_principal, unsafe_allow_html=True)
 
 'Esta información es la base de estudios como los relacionados con el cambio climático'
