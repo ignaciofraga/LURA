@@ -40,22 +40,33 @@ if tipo_entrada == acciones[0]:
     st.markdown(titulo_principal, unsafe_allow_html=True)
 
     # Texto
-    texto = 'El Lura es el barco que utilizan los investigadores del Centro Oceanográfico de A Coruña para estudiar la costa cercana a la ciudad. Se trata de un antiguo buque de pesca, de 14 metros de eslora (longitud) y 4 de manga (anchura) acondicionado para trabajos científicos'
+    texto = 'El Lura es el barco que utilizan los investigadores del Centro Oceanográfico de A Coruña para estudiar la costa cercana a la ciudad. Se trata de un antiguo buque de pesca, de 14 metros de eslora (longitud) y 4 de manga (anchura) acondicionado para trabajos científicos.'
     titulo_principal = '<p style="text-align:  justify;font-family:Bahnschrift; font-size: 20px;">' + texto + '</p>'
     st.markdown(titulo_principal, unsafe_allow_html=True)
     
     imagen_pagina = Image.open(foto_Lura_1) 
     st.image(imagen_pagina) 
     
-    texto = 'Cuando el tiempo lo permite, los investigadores y marineros del IEO muestrean la columna de agua en una serie de puntos concretos. Se miden diferentes variables físicas (temperatura, salinidad,...), químicas (oxígeno disuelto, pH,...) y biológicas (biomasa de plancton, concentración de clorofila). El IEO lleva casi 40 años haciendo estos estudios, lo que le ha permitido recopilar mucha información, fundamental para estudiar el cambio climático o conocer la salud de nuestra costa.' 
+    texto = 'Cuando el tiempo lo permite, los investigadores y marineros del IEO se embarcan en el Lura y salen a muestrear la columna de agua en una serie de puntos concretos. Se miden diferentes variables físicas (temperatura, salinidad,...), químicas (oxígeno disuelto, pH,...) y biológicas (biomasa de plancton, concentración de clorofila,...). El IEO lleva casi 40 años haciendo estos estudios, lo que le ha permitido recopilar mucha información, fundamental para estudiar el cambio climático o conocer la salud de nuestra costa.' 
     titulo_principal = '<p style="text-align:  justify;font-family:Bahnschrift; font-size: 20px;">' + texto + '</p>'
     st.markdown(titulo_principal, unsafe_allow_html=True)
 
-    texto = 'El IEO también estudia los bancos de peces de la zona, una información muy útil en una región como Galicia, donde la pesca es una actividad muy importante'
+    texto = 'Para tomar muestras del agua, el Lura tiene una roseta oceanográfica. La roseta es una estructura metálica con varias botellas de plástico a su alrededor. Desde una grúa situada a bordo del Lura se sumerge la roseta a distintas profundidades, y en cada una de ellas se cierra una botella, atrapando el agua del mar que se recupera al volver a subir la roseta al barco.'
+    titulo_principal = '<p style="text-align:  justify;font-family:Bahnschrift; font-size: 20px;">' + texto + '</p>'
+    st.markdown(titulo_principal, unsafe_allow_html=True)
+    
+    imagen_pagina = Image.open(foto_1) 
+    st.image(imagen_pagina)   
+    st.caption('Vista general del barco terminado')
+    
+    texto = 'Para recoger muestras de plancton se utilizan redes de planctons. Se trata de redes muy finas, que atrapan los organismos más grandes que el tamaño (la "luz") de la malla y los concentran en un extremo de la red. Las redes se arrastran desde el barco cuando éste se desplaza.'
     titulo_principal = '<p style="text-align:  justify;font-family:Bahnschrift; font-size: 20px;">' + texto + '</p>'
     st.markdown(titulo_principal, unsafe_allow_html=True)
 
-'Esta información es la base de estudios como los relacionados con el cambio climático'
+    texto = 'También se estudian los bancos de peces de la zona, una información muy útil en una región como Galicia, donde la pesca es una actividad tan importante. Para capturar los peces y estudiarlos se utilizan redes de pesca, con luces mucho mayores que las de plancton.'
+    titulo_principal = '<p style="text-align:  justify;font-family:Bahnschrift; font-size: 20px;">' + texto + '</p>'
+    st.markdown(titulo_principal, unsafe_allow_html=True)
+
 
 if tipo_entrada == acciones[1]:
 
