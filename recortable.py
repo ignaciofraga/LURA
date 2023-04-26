@@ -85,7 +85,7 @@ if tipo_entrada == acciones[0]:
     titulo_principal = '<p style="text-align:  justify;font-family:Bahnschrift; font-size: 20px;">' + texto + '</p>'
     st.markdown(titulo_principal, unsafe_allow_html=True)
 
-    st.write("Descubre dónde está el Lura pinchando [aquí](https://www.vesselfinder.com/es/vessels/details/224000100)")
+    st.write("Descubre dónde está el Lura pinchando [aquí](https://www.vesselfinder.com/es/?mmsi=224000100)")
 
 if tipo_entrada == acciones[1]:
 
