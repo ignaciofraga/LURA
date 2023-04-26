@@ -45,7 +45,8 @@ if tipo_entrada == acciones[0]:
     st.markdown(titulo_principal, unsafe_allow_html=True)
     
     imagen_pagina = Image.open(foto_Lura_1) 
-    st.image(imagen_pagina) 
+    st.image(imagen_pagina)
+    st.caption('Fotografía del Lura tomada por Mar Nieto, una de las investigadoras del Centro Oceanográfico')
     
     texto = 'Cuando el tiempo lo permite, los investigadores y marineros del IEO se embarcan en el Lura y salen a muestrear la columna de agua en una serie de puntos concretos. Se miden diferentes variables físicas (temperatura, salinidad,...), químicas (oxígeno disuelto, pH,...) y biológicas (biomasa de plancton, concentración de clorofila,...). El IEO lleva casi 40 años haciendo estos estudios, lo que le ha permitido recopilar mucha información, fundamental para estudiar el cambio climático o conocer la salud de nuestra costa.' 
     titulo_principal = '<p style="text-align:  justify;font-family:Bahnschrift; font-size: 20px;">' + texto + '</p>'
@@ -57,15 +58,23 @@ if tipo_entrada == acciones[0]:
     
     imagen_pagina = Image.open(foto_1) 
     st.image(imagen_pagina)   
-    st.caption('Vista general del barco terminado')
+    st.caption('Fotografía de una roseta oceanográfica')
     
     texto = 'Para recoger muestras de plancton se utilizan redes de planctons. Se trata de redes muy finas, que atrapan los organismos más grandes que el tamaño (la "luz") de la malla y los concentran en un extremo de la red. Las redes se arrastran desde el barco cuando éste se desplaza.'
     titulo_principal = '<p style="text-align:  justify;font-family:Bahnschrift; font-size: 20px;">' + texto + '</p>'
     st.markdown(titulo_principal, unsafe_allow_html=True)
+    
+    imagen_pagina = Image.open(foto_1) 
+    st.image(imagen_pagina)   
+    st.caption('Fotografía de una red de plancton')
 
     texto = 'También se estudian los bancos de peces de la zona, una información muy útil en una región como Galicia, donde la pesca es una actividad tan importante. Para capturar los peces y estudiarlos se utilizan redes de pesca, con luces mucho mayores que las de plancton.'
     titulo_principal = '<p style="text-align:  justify;font-family:Bahnschrift; font-size: 20px;">' + texto + '</p>'
     st.markdown(titulo_principal, unsafe_allow_html=True)
+    
+    imagen_pagina = Image.open(foto_1) 
+    st.image(imagen_pagina)   
+    st.caption('Fotografía de una red de pesca')
 
 
 if tipo_entrada == acciones[1]:
