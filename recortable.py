@@ -15,20 +15,28 @@ foto_1               = 'DATOS/IMAGENES/ieo.jpg'
 archivo_recortable   = 'DATOS/PLANO_LURA_A3.pdf'
 
 
+
+
+
+
 # # LOGOS INICIO
 imagen_pagina = Image.open(logo_IEO_principal) 
 st.image(imagen_pagina) 
 
-# col1, col2 = st.columns(2,gap="small")
 
-# with col1:
-#     imagen_pagina = Image.open(logo_centro_coruna) 
-#     st.image(imagen_pagina)     
-    
-# with col2:
-#     imagen_pagina = Image.open(logo_IEO_principal) 
-#     st.image(imagen_pagina)   
+# Despliega un botón lateral para seleccionar el tipo de página      
+acciones     = ['Conoce el Lura', 'Descargar recortable','Consruye tu red de plancton']
+tipo_entrada = st.sidebar.radio("Explora!",acciones)
 
+
+
+# PAGINA PARA CONCER EL LURA   
+if tipo_entrada == acciones[0]:
+
+    # Texto
+    texto = 'Qué es el Lura'
+    titulo_principal = '<p style="text-align: center;font-family:Bahnschrift; font-size: 35px;">' + texto + '</p>'
+    st.markdown(titulo_principal, unsafe_allow_html=True)
 
 # TITULO PRINCIPAL
 titulo_principal = '<p style="text-align: center;font-family:Bahnschrift; font-size: 35px;">Monta el barco del Oceanográfico</p>'
