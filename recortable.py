@@ -75,7 +75,17 @@ if tipo_entrada == acciones[0]:
     imagen_pagina = Image.open(foto_1) 
     st.image(imagen_pagina)   
     st.caption('Fotografía de una red de pesca')
+    
+    
+    texto = 'Dónde está el Lura?'
+    titulo_principal = '<p style="text-align: center;font-family:Bahnschrift; font-size: 35px;">' + texto + '</p>'
+    st.markdown(titulo_principal, unsafe_allow_html=True)
 
+    texto = 'El Lura tiene su base en el puerto de A Coruña, pero mucho días lo puedes ver navegando por nuestras costas. En el siguiente enlace puedes conocer dónde se encuentra en cada momento!.'
+    titulo_principal = '<p style="text-align:  justify;font-family:Bahnschrift; font-size: 20px;">' + texto + '</p>'
+    st.markdown(titulo_principal, unsafe_allow_html=True)
+
+    st.write("Descubre dónde está el Lura pinchando [aquí](https://www.vesselfinder.com/es/vessels/details/224000100)")
 
 if tipo_entrada == acciones[1]:
 
