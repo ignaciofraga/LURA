@@ -65,7 +65,7 @@ if tipo_entrada == acciones[0]:
     st.image(imagen_pagina)   
     st.caption('Fotografía de una roseta oceanográfica')
     
-    texto = 'Para recoger muestras de plancton se utilizan redes de planctons. Se trata de redes muy finas, que atrapan los organismos más grandes que el tamaño (la "luz") de la malla y los concentran en un extremo de la red. Las redes se arrastran desde el barco cuando éste se desplaza.'
+    texto = 'Para recoger muestras de plancton se utilizan redes de plancton. Se trata de redes muy finas, que atrapan los organismos más grandes que el tamaño (la "luz") de la malla y los concentran en un extremo de la red. Las redes se arrastran desde el barco cuando éste se desplaza.'
     titulo_principal = '<p style="text-align:  justify;font-family:Bahnschrift; font-size: 20px;">' + texto + '</p>'
     st.markdown(titulo_principal, unsafe_allow_html=True)
     
@@ -102,7 +102,7 @@ if tipo_entrada == acciones[1]:
     
     # DESCARGA RECORTABLE
     #titulo_secundario = '<p style="text-align: center;font-family:Gothic Light; font-size: 20px;"> Imprime los planos en un A3, monta el barco y comienza a navegar</p>'
-    titulo_secundario = '<p style="text-align: center;font-family:Bahnschrift; font-size: 20px;"> Imprime los planos en un A3, monta el barco y comienza a navegar</p>'
+    titulo_secundario = '<p style="text-align: center;font-family:Bahnschrift; font-size: 20px;"> Imprime los planos, monta el barco y comienza a navegar</p>'
     
     st.markdown(titulo_secundario, unsafe_allow_html=True)
         
