@@ -11,14 +11,19 @@ from PIL import Image
 logo_IEO_principal   = 'DATOS/IMAGENES/LOGOS.jpg' 
 logo_centro_coruna   = 'DATOS/IMAGENES/logo_IEO_Coru.jpg' 
 foto_Lura_1          = 'DATOS/IMAGENES/LURA.jpg'
-
+logo_IEO_reducido    = 'DATOS/IMAGENES/ieo.ico'
 foto_1               = 'DATOS/IMAGENES/ieo.jpg'    
 archivo_recortable   = 'DATOS/PLANO_LURA_A3.pdf'
 
 
 
 
+# Datos comunes utilizados por la aplicación
 
+
+# Encabezado  
+imagen_logo   = Image.open(logo_IEO_reducido)
+st.set_page_config(page_title="IEO A Coruña", layout="wide",page_icon=logo_IEO_reducido) 
 
 # # LOGOS INICIO
 imagen_pagina = Image.open(logo_IEO_principal) 
