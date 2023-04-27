@@ -174,9 +174,9 @@ st.image(imagen_pagina)
 
 
 
-paginas = {"CONOCE EL LURA": conoce_lura,
-           "RECORTABLE DEL LURA": recortable_lura,
-           "MONTA TU RED DE PLANCTON": red_plancton}
+paginas = {"CONOCE EL LURA": conoce_lura(foto_Lura_1,foto_1,foto_roseta),
+           "RECORTABLE DEL LURA": recortable_lura(archivo_recortable,foto_1),
+           "MONTA TU RED DE PLANCTON": red_plancton()}
             
  
         
