@@ -22,9 +22,8 @@ st.set_page_config(page_title="CONOCE EL LURA",page_icon=logo_IEO_reducido)  # ,
 
 
 # TITULO PRINCIPAL
-titulo_principal = '<p style="text-align: center;font-family:Bahnschrift; font-size: 35px;">Monta el barco del Oceanográfico</p>'
-st.markdown(titulo_principal, unsafe_allow_html=True)
-titulo_principal = '<p style="text-align: center;font-family:Bahnschrift; font-size: 35px;"> de A Coruña en tu propia casa !!</p>'
+texto = 'Monta el barco del Centro Oceanográfico de A Coruña de A Coruña en tu propia casa !!'
+titulo_principal = '<p style="text-align:  center;font-family:Bahnschrift; font-size: 35px;">' + texto + '</p>'
 st.markdown(titulo_principal, unsafe_allow_html=True)
 
 # DESCARGA RECORTABLE
