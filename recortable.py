@@ -11,6 +11,7 @@ from PIL import Image
 logo_IEO_principal   = 'DATOS/IMAGENES/LOGOS.jpg' 
 logo_centro_coruna   = 'DATOS/IMAGENES/logo_IEO_Coru.jpg' 
 foto_Lura_1          = 'DATOS/IMAGENES/LURA.jpg'
+foto_roseta          = 'DATOS/IMAGENES/roseta.jpg'
 logo_IEO_reducido    = 'DATOS/IMAGENES/ieo.ico'
 foto_1               = 'DATOS/IMAGENES/ieo.jpg'    
 archivo_recortable   = 'DATOS/PLANO_LURA_A3.pdf'
@@ -18,26 +19,12 @@ archivo_recortable   = 'DATOS/PLANO_LURA_A3.pdf'
 
 
 
-# Datos comunes utilizados por la aplicación
-
-
-# Encabezado  
-imagen_logo   = Image.open(logo_IEO_reducido)
-st.set_page_config(page_title="IEO A Coruña", layout="wide",page_icon=logo_IEO_reducido) 
-
-# # LOGOS INICIO
-imagen_pagina = Image.open(logo_IEO_principal) 
-st.image(imagen_pagina) 
-
-
-# Despliega un botón lateral para seleccionar el tipo de página      
-acciones     = ['Conoce el Lura', 'Descargar recortable','Consruye tu red de plancton']
-tipo_entrada = st.sidebar.radio("Explora!",acciones)
 
 
 
 # PAGINA PARA CONCER EL LURA   
-if tipo_entrada == acciones[0]:
+# if tipo_entrada == acciones[0]:
+def conoce_lura(foto_Lura_1,foto_1,foto_roseta):
 
     # Texto
     texto = 'Qué es el Lura?'
@@ -61,7 +48,7 @@ if tipo_entrada == acciones[0]:
     titulo_principal = '<p style="text-align:  justify;font-family:Bahnschrift; font-size: 20px;">' + texto + '</p>'
     st.markdown(titulo_principal, unsafe_allow_html=True)
     
-    imagen_pagina = Image.open(foto_1) 
+    imagen_pagina = Image.open(foto_roseta) 
     st.image(imagen_pagina)   
     st.caption('Fotografía de una roseta oceanográfica')
     
@@ -92,7 +79,12 @@ if tipo_entrada == acciones[0]:
 
     st.write("Descubre dónde está el Lura pinchando [aquí](https://www.vesselfinder.com/es/?mmsi=224000100)")
 
-if tipo_entrada == acciones[1]:
+
+
+
+
+#if tipo_entrada == acciones[1]:
+def recortable_lura(archivo_recortable,foto_1):
 
     # TITULO PRINCIPAL
     titulo_principal = '<p style="text-align: center;font-family:Bahnschrift; font-size: 35px;">Monta el barco del Oceanográfico</p>'
@@ -146,3 +138,49 @@ if tipo_entrada == acciones[1]:
         st.image(imagen_pagina)   
         st.caption('Detalle de la zona de proa')    
      
+
+def red_plancton():
+    
+    texto = 'Para recoger muestras de plancton se utilizan redes de plancton. Se trata de redes muy finas, que atrapan los organismos más grandes que el tamaño (la "luz") de la malla y los concentran en un extremo de la red. Las redes se arrastran desde el barco cuando éste se desplaza.'
+    titulo_principal = '<p style="text-align:  justify;font-family:Bahnschrift; font-size: 20px;">' + texto + '</p>'
+    st.markdown(titulo_principal, unsafe_allow_html=True)
+    
+    imagen_pagina = Image.open(foto_1) 
+    st.image(imagen_pagina)   
+    st.caption('Fotografía de una red de plancton')     
+
+
+
+
+
+
+
+
+# Datos comunes utilizados por la aplicación
+
+
+# Encabezado  
+imagen_logo   = Image.open(logo_IEO_reducido)
+st.set_page_config(page_title="IEO A Coruña", layout="wide",page_icon=logo_IEO_reducido) 
+
+# # LOGOS INICIO
+imagen_pagina = Image.open(logo_IEO_principal) 
+st.image(imagen_pagina) 
+
+
+# # Despliega un botón lateral para seleccionar el tipo de página      
+# acciones     = ['Conoce el Lura', 'Descargar recortable','Construye tu red de plancton']
+# tipo_entrada = st.sidebar.radio("Explora!",acciones)
+
+
+
+paginas = {"CONOCE EL LURA": conoce_lura,
+           "RECORTABLE DEL LURA": recortable_lura,
+           "MONTA TU RED DE PLANCTON": red_plancton}
+            
+ 
+        
+seleccion = st.sidebar.selectbox("Elige la página a mostrar: ",tuple(paginas.keys()))
+        
+paginas[seleccion]()
+
