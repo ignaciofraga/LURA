@@ -48,7 +48,7 @@ imagen_pagina = Image.open(foto_roseta)
 st.image(imagen_pagina)   
 st.caption('Fotografía de una roseta oceanográfica')
 
-texto = 'Además de estudiar el agua, desde el IEO se analizan los organismos más pequeños del mar:el plancton. Para recoger muestras de plancton se utilizan redes de plancton. Se trata de redes muy finas, que atrapan los organismos más grandes que el tamaño (la "luz") de la malla y los concentran en un extremo de la red. Las redes se arrastran desde el barco cuando éste se desplaza.'
+texto = 'Para recoger muestras de plancton se utilizan unas redes especiales. Se trata de redes muy finas, que atrapan los organismos más grandes que el tamaño (la "luz") de la malla y los concentran en un extremo de la red. Las redes se arrastran desde el barco cuando éste se desplaza.'
 titulo_principal = '<p style="text-align:  justify;font-family:Bahnschrift; font-size: 20px;">' + texto + '</p>'
 st.markdown(titulo_principal, unsafe_allow_html=True)
 
