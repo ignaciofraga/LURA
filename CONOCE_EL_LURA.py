@@ -18,7 +18,8 @@ archivo_recortable   = 'DATOS/PLANO_LURA_A3.pdf'
 
 
 
-
+imagen_logo   = Image.open(logo_IEO_reducido)
+st.set_page_config(page_title="CONOCE EL LURA",page_icon=logo_IEO_reducido)  # , layout="wide"
 
 
 # Texto
