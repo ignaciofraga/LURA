@@ -36,11 +36,11 @@ imagen_pagina = Image.open(foto_Lura_1)
 st.image(imagen_pagina)
 st.caption('Fotografía del Lura tomada por Mar Nieto, una de las investigadoras del Centro Oceanográfico')
 
-texto = 'Cuando el tiempo lo permite, los investigadores y marineros del IEO se embarcan en el Lura y salen a muestrear la columna de agua en una serie de puntos concretos. Se miden diferentes variables físicas (temperatura, salinidad,...), químicas (oxígeno disuelto, pH,...) y biológicas (biomasa de plancton, concentración de clorofila,...). El IEO lleva casi 40 años haciendo estos estudios, lo que le ha permitido recopilar mucha información, fundamental para estudiar el cambio climático o conocer la salud de nuestra costa.' 
+texto = 'Cuando el tiempo lo permite, los investigadores y marineros del IEO se embarcan en el Lura y salen a muestrear una serie de puntos concretos en el mar. Se miden diferentes variables físicas (temperatura, salinidad,...), químicas (oxígeno disuelto, pH,...) y biológicas (biomasa de plancton, concentración de clorofila,...). El IEO lleva casi 40 años haciendo estos muestreos, lo que le ha permitido recopilar una información que es fundamental para estudiar el cambio climático o conocer la salud de nuestra costa.' 
 titulo_principal = '<p style="text-align:  justify;font-family:Bahnschrift; font-size: 20px;">' + texto + '</p>'
 st.markdown(titulo_principal, unsafe_allow_html=True)
 
-texto = 'Para tomar muestras del agua, el Lura tiene una roseta oceanográfica. La roseta es una estructura metálica con varias botellas de plástico a su alrededor. Desde una grúa situada a bordo del Lura se sumerge la roseta a distintas profundidades, y en cada una de ellas se cierra una botella, atrapando el agua del mar que se recupera al volver a subir la roseta al barco.'
+texto = 'Para tomar muestras del agua, el Lura tiene una roseta oceanográfica. La roseta es una estructura metálica con varias botellas de plástico a su alrededor. Desde una grúa situada a bordo del Lura se sumerge la roseta a distintas profundidades, y en cada una de ellas se cierra una botella, atrapando el agua del mar que se recupera al volver a subir la roseta al barco. Las muestras recogidas se analizan en nuestros laboratorios una vez el barco vuelve al puerto.'
 titulo_principal = '<p style="text-align:  justify;font-family:Bahnschrift; font-size: 20px;">' + texto + '</p>'
 st.markdown(titulo_principal, unsafe_allow_html=True)
 
@@ -48,7 +48,7 @@ imagen_pagina = Image.open(foto_roseta)
 st.image(imagen_pagina)   
 st.caption('Fotografía de una roseta oceanográfica')
 
-texto = 'Para recoger muestras de plancton se utilizan redes de plancton. Se trata de redes muy finas, que atrapan los organismos más grandes que el tamaño (la "luz") de la malla y los concentran en un extremo de la red. Las redes se arrastran desde el barco cuando éste se desplaza.'
+texto = 'Además de estudiar el agua, desde el IEO se analizan los organismos más pequeños del mar:el plancton. Para recoger muestras de plancton se utilizan redes de plancton. Se trata de redes muy finas, que atrapan los organismos más grandes que el tamaño (la "luz") de la malla y los concentran en un extremo de la red. Las redes se arrastran desde el barco cuando éste se desplaza.'
 titulo_principal = '<p style="text-align:  justify;font-family:Bahnschrift; font-size: 20px;">' + texto + '</p>'
 st.markdown(titulo_principal, unsafe_allow_html=True)
 
