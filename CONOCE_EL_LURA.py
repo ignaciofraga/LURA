@@ -14,7 +14,7 @@ foto_Lura_1          = 'DATOS/IMAGENES/LURA.jpg'
 foto_roseta          = 'DATOS/IMAGENES/roseta_red.jpg'
 logo_IEO_reducido    = 'DATOS/IMAGENES/ieo.ico'
 foto_1               = 'DATOS/IMAGENES/ieo.jpg'    
-archivo_recortable   = 'DATOS/RECORTABLE_LURA.pdf'
+
 
 
 
