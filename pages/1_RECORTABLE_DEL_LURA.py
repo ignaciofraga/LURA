@@ -8,12 +8,13 @@ Created on Mon Apr 24 11:13:13 2023
 import streamlit as st
 from PIL import Image
 
-logo_IEO_principal   = 'DATOS/IMAGENES/LOGOS.jpg' 
-logo_centro_coruna   = 'DATOS/IMAGENES/logo_IEO_Coru.jpg' 
-foto_Lura_1          = 'DATOS/IMAGENES/LURA.jpg'
-foto_roseta          = 'DATOS/IMAGENES/roseta_red.jpg'
 logo_IEO_reducido    = 'DATOS/IMAGENES/ieo.ico'
-foto_1               = 'DATOS/IMAGENES/ieo.jpg'    
+
+foto_base            = 'DATOS/IMAGENES/foto_base.jpeg'    
+foto_laterales       = 'DATOS/IMAGENES/foto_laterales.jpeg'
+foto_cabina          = 'DATOS/IMAGENES/foto_cabina.jpeg'
+foto_final           = 'DATOS/IMAGENES/foto_final_montaje.jpeg'
+
 archivo_recortable   = 'DATOS/RECORTABLE_LURA.pdf'
 
 
@@ -55,21 +56,21 @@ st.markdown(titulo_fotos, unsafe_allow_html=True)
 col1, col2 = st.columns(2,gap="small")
 
 with col1:
-    imagen_pagina = Image.open(foto_1) 
+    imagen_pagina = Image.open(foto_base) 
     st.image(imagen_pagina)   
-    st.caption('Vista general del barco terminado')
+    st.caption('Piezas 1,2 y 3 montadas')
     
-    imagen_pagina = Image.open(foto_1) 
+    imagen_pagina = Image.open(foto_cabina) 
     st.image(imagen_pagina)   
-    st.caption('Detalle de la zona de popa')    
+    st.caption('Cabina y tejado montados')    
     
 with col2:
-    imagen_pagina = Image.open(foto_1) 
+    imagen_pagina = Image.open(foto_laterales) 
     st.image(imagen_pagina)   
-    st.caption('Vista general del barco terminado')
+    st.caption('Añadidos los laterales y la cubierta')
     
-    imagen_pagina = Image.open(foto_1) 
+    imagen_pagina = Image.open(foto_final) 
     st.image(imagen_pagina)   
-    st.caption('Detalle de la zona de proa')    
+    st.caption('Terminado y listo para navegar!')    
  
 
