@@ -24,6 +24,9 @@ foto_1               = 'DATOS/IMAGENES/ieo.jpg'
 imagen_logo   = Image.open(logo_IEO_reducido)
 st.set_page_config(page_title="CONOCE EL LURA",page_icon=logo_IEO_reducido)  # , layout="wide"
 
+logo_cabecera = Image.open(logo_IEO_principal) 
+st.image(logo_cabecera)
+
 
 # Texto
 texto = 'Qué es el Lura?'
