@@ -12,7 +12,7 @@ logo_IEO_principal   = 'DATOS/IMAGENES/LOGOS.jpg'
 logo_centro_coruna   = 'DATOS/IMAGENES/logo_IEO_Coru.jpg' 
 
 foto_Lura_1          = 'DATOS/IMAGENES/LURA.jpg'
-foto_roseta          = 'DATOS/IMAGENES/roseta_red.jpg'
+foto_roseta          = 'DATOS/IMAGENES/roseta.jpg'
 foto_red_plancton    = 'DATOS/IMAGENES/red_plancton.PNG'
 
 logo_IEO_reducido    = 'DATOS/IMAGENES/ieo.ico'
