@@ -33,7 +33,7 @@ st.markdown(titulo_principal, unsafe_allow_html=True)
 
 # DESCARGA RECORTABLE
 #titulo_secundario = '<p style="text-align: center;font-family:Gothic Light; font-size: 20px;"> Imprime los planos en un A3, monta el barco y comienza a navegar</p>'
-titulo_secundario = '<p style="text-align: center;font-family:Bahnschrift; font-size: 20px;"> Imprime los planos, monta el barco y comienza a navegar</p>'
+titulo_secundario = '<p style="text-align: center;font-family:Bahnschrift; font-size: 20px;"> Imprime los planos, monta el barco y comienza a navegar.</p>'
 
 st.markdown(titulo_secundario, unsafe_allow_html=True)
     
@@ -52,7 +52,7 @@ with col3:
 
 
 # FOTOS GUIA
-titulo_fotos = '<p style="text-align: center;font-family:Bahnschrift; font-size: 20px;"> Aquí tienes unas fotos del barco terminado, para que te ayuden en el montaje</p>'
+titulo_fotos = '<p style="text-align: center;font-family:Bahnschrift; font-size: 20px;"> Aquí tienes unas fotos del barco terminado, para que te ayuden en el montaje.</p>'
 st.markdown(titulo_fotos, unsafe_allow_html=True)
 
 
