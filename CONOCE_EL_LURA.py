@@ -10,8 +10,11 @@ from PIL import Image
 
 logo_IEO_principal   = 'DATOS/IMAGENES/LOGOS.jpg' 
 logo_centro_coruna   = 'DATOS/IMAGENES/logo_IEO_Coru.jpg' 
+
 foto_Lura_1          = 'DATOS/IMAGENES/LURA.jpg'
 foto_roseta          = 'DATOS/IMAGENES/roseta_red.jpg'
+foto_red_plancton    = 'DATOS/IMAGENES/red_plancton_2.PNG'
+
 logo_IEO_reducido    = 'DATOS/IMAGENES/ieo.ico'
 foto_1               = 'DATOS/IMAGENES/ieo.jpg'    
 
@@ -34,9 +37,10 @@ st.markdown(titulo_principal, unsafe_allow_html=True)
 
 imagen_pagina = Image.open(foto_Lura_1) 
 st.image(imagen_pagina)
-st.caption('Fotografía del Lura tomada por Mar Nieto, una de las investigadoras del Centro Oceanográfico')
+#st.caption('Fotografía del Lura tomada por Mar Nieto, una de las investigadoras del Centro Oceanográfico')
+st.caption('Fotografía del Lura')
 
-texto = 'Cuando el tiempo lo permite, los investigadores y marineros del IEO se embarcan en el Lura y salen a muestrear una serie de puntos concretos en el mar. Se miden diferentes variables físicas (temperatura, salinidad,...), químicas (oxígeno disuelto, pH,...) y biológicas (biomasa de plancton, concentración de clorofila,...). El IEO lleva casi 40 años haciendo estos muestreos, lo que le ha permitido recopilar una información que es fundamental para estudiar el cambio climático o conocer la salud de nuestra costa.' 
+texto = 'Cuando el tiempo lo permite, los investigadores y marineros del Instituto Español de Oceanografía (IEO) se embarcan en el Lura y salen a muestrear una serie de puntos concretos en el mar. Se miden diferentes variables físicas (temperatura, salinidad,...), químicas (oxígeno disuelto, pH,...) y biológicas (biomasa de plancton, concentración de clorofila,...). El IEO lleva casi 40 años haciendo estos muestreos, lo que le ha permitido recopilar una información que es fundamental para estudiar el cambio climático o conocer la salud de nuestra costa.' 
 titulo_principal = '<p style="text-align:  justify;font-family:Bahnschrift; font-size: 20px;">' + texto + '</p>'
 st.markdown(titulo_principal, unsafe_allow_html=True)
 
@@ -52,17 +56,14 @@ texto = 'Para recoger muestras de plancton se utilizan unas redes especiales. Se
 titulo_principal = '<p style="text-align:  justify;font-family:Bahnschrift; font-size: 20px;">' + texto + '</p>'
 st.markdown(titulo_principal, unsafe_allow_html=True)
 
-imagen_pagina = Image.open(foto_1) 
+imagen_pagina = Image.open(foto_red_plancton) 
 st.image(imagen_pagina)   
 st.caption('Fotografía de una red de plancton')
 
-texto = 'También se estudian los bancos de peces de la zona, una información muy útil en una región como Galicia, donde la pesca es una actividad tan importante. Para capturar los peces y estudiarlos se utilizan redes de pesca, con luces mucho mayores que las de plancton.'
+texto = 'Gracias al Lura también se pueden estudiar otros aspectos muy importantes para la economía de la costa ártabra, como las mareas rojas o el estado de los bancos de peces. La información que recoge el IEO en esos estudios es la que utilizan después diferentes administraciones para gestionar el medio marino.'
 titulo_principal = '<p style="text-align:  justify;font-family:Bahnschrift; font-size: 20px;">' + texto + '</p>'
 st.markdown(titulo_principal, unsafe_allow_html=True)
 
-imagen_pagina = Image.open(foto_1) 
-st.image(imagen_pagina)   
-st.caption('Fotografía de una red de pesca')
 
 
 texto = 'Dónde está el Lura?'
