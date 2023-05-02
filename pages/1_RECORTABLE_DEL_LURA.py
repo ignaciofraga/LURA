@@ -9,6 +9,7 @@ import streamlit as st
 from PIL import Image
 
 logo_IEO_reducido    = 'DATOS/IMAGENES/ieo.ico'
+logo_IEO_principal   = 'DATOS/IMAGENES/LOGOS.jpg' 
 
 foto_base            = 'DATOS/IMAGENES/foto_base.jpeg'    
 foto_laterales       = 'DATOS/IMAGENES/foto_laterales.jpeg'
