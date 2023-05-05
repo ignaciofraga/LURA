@@ -35,12 +35,12 @@ texto = 'Descarga el pdf en el enlace que encontrarás más abajo. Sigue las int
 titulo_principal = '<p style="text-align: center;font-family:Bahnschrift; font-size: 20px;">' + texto + '</p>'
 st.markdown(titulo_principal, unsafe_allow_html=True)
 
-col1, col2, col3, col4, col5 = st.columns(5,gap="small")
+col1, col2, col3 = st.columns(3,gap="small")
 
 with open(archivo_red, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
 
-with col3:
+with col2:
 
     st.download_button(label="DESCARGAR INSTRUCCIONES",
                 data=PDFbyte,
