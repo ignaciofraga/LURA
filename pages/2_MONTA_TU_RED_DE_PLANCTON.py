@@ -38,10 +38,10 @@ st.markdown(titulo_principal, unsafe_allow_html=True)
 
 col1, col2, col3, col4, col5 = st.columns(5,gap="small")
 
-with col3:
+with open(archivo_red, "rb") as pdf_file:
+    PDFbyte = pdf_file.read()
 
-    with open(archivo_red, "rb") as pdf_file:
-        PDFbyte = pdf_file.read()
+with col3:
 
     st.download_button(label="DESCARGAR INSTRUCCIONES",
                 data=PDFbyte,
