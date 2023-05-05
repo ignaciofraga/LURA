@@ -30,7 +30,6 @@ st.markdown(titulo_principal, unsafe_allow_html=True)
 
 imagen_pagina = Image.open(foto_red) 
 st.image(imagen_pagina)   
-st.caption('Cabina y tejado montados')
 
 texto = 'Descarga el pdf en el enlace que encontrarás más abajo. Sigue las intrucciones y construye una red de plancton como la que utiliza el Lura en sus muestreos'
 titulo_principal = '<p style="text-align: center;font-family:Bahnschrift; font-size: 20px;">' + texto + '</p>'
