@@ -11,9 +11,9 @@ from PIL import Image
 logo_IEO_reducido    = 'DATOS/IMAGENES/ieo.ico'
 logo_IEO_principal   = 'DATOS/IMAGENES/LOGOS.jpg' 
 
-foto_red             = 'DATOS/IMAGENES/red_casera.PNG'
+foto_red             = 'DATOS/IMAGENES/microscopio_casero.PNG'
 
-archivo_red          = 'DATOS/RED_PLANCTON.pdf'
+archivo_red          = 'DATOS/MICROSCOPIO.pdf'
 
 
 imagen_logo   = Image.open(logo_IEO_reducido)
